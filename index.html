@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Column Grid</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 50px 0px;
+      font-size: 2em;
+      padding: 20px 0px;
+      color: #333;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      gap: 40px; 
+    }
+
+    .card {
+      background-color: #fff7e6;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      padding: 20px;
+    }
+    .card:hover{
+        box-shadow:0px 5px 13px 2px rgba(255, 201.99999999999997, 67.999999999999,.95) ;
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 15px;
+    }
+
+    .card h2 {
+      margin-top: 10px;
+      font-size: 2rem;
+      color: black;
+    }
+
+    .card p {
+      color: #555;
+      margin: 10px 0;
+    }
+
+    .shop-btn {
+      display: inline-block;
+      padding: 14px 30px;
+      background-color: #fcaf17;;
+      color: black;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .shop-btn:hover {
+      background-color: white;
+    }
+
+    
+    @media (max-width: 768px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr); 
+      }
+    }
+
+    @media (max-width: 480px) {
+      .grid {
+        grid-template-columns: 3fr; 
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Brand Building</h1>
+    <div class="grid">
+      <div class="card">
+        <img src="https://amabiclothinhstore.myshopify.com/cdn/shop/files/Services-2_d126c817-8d0a-4fbe-9881-13c37aaa7665_1800x1800.png?v=1716363850" alt="Product 1">
+        <h2>Marketing</h2>
+        <p>Marketing Services for Startups – Led by Our Expert Marketing Head
+            Led by our expert marketing head, we provide tailored strategies to help startups grow fast. From brand building to targeted campaigns, we deliver solutions that boost visibility, and sales.</p>
+            <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="card">
+        <img src="https://amabiclothinhstore.myshopify.com/cdn/shop/files/Services-2_d126c817-8d0a-4fbe-9881-13c37aaa7665_1800x1800.png?v=1716363850" alt="Product 2">
+        <h2>Blank Sample Pack</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore.o eiusmod tempor incididunt ut labore.o eiusmod tempor incididunt ut labore.</p>
+            <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="card">
+        <img src="https://amabiclothinhstore.myshopify.com/cdn/shop/files/Services-2_d126c817-8d0a-4fbe-9881-13c37aaa7665_1800x1800.png?v=1716363850" alt="Product 3">
+        <h2>Custom Sample Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Sed do eiusmod tempor incididunt ut labore.o eiusmod tempor incididunt ut labore.o eiusmod tempor incididunt ut labore.</p>
+            <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="card">
+        <img src="https://amabiclothinhstore.myshopify.com/cdn/shop/files/Services-2_d126c817-8d0a-4fbe-9881-13c37aaa7665_1800x1800.png?v=1716363850" alt="Product 4">
+        <h2>GSM Cutter</h2>
+        <p>Quality GSM cutter used by Textile industries from decades.</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      <div class="card">
+        <img src="https://amabiclothinhstore.myshopify.com/cdn/shop/files/Services-2_d126c817-8d0a-4fbe-9881-13c37aaa7665_1800x1800.png?v=1716363850" alt="Product 5">
+        <h2>Fabric Swatches</h2>
+        <p>Do you want to start a collection and want to get familiar with the types of fabrics? Our swatch books is here to help!</p>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+      
+    </div>
+  </div>
+</body>
+</html>
